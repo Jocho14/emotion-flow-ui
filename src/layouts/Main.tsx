@@ -8,7 +8,7 @@ const Main: React.FC = () => {
       <main className="min-h-screen">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
