@@ -1,7 +1,7 @@
 import FloatingLines from "@/components/FloatingLines";
 import { Button } from "@/components/ui/button";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { ArrowRight, Upload } from "iconoir-react";
+import { Upload } from "iconoir-react";
 import { Link } from "react-router";
 
 const LandingPage: React.FC = () => {
