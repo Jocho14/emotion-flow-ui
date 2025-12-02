@@ -218,9 +218,13 @@ const EmotionRadarChart: React.FC<EmotionRadarChartProps> = ({ chartData }) => {
         {hasData ? (
           <ChartContainer
             config={chartConfig}
-            className="mx-auto aspect-square max-h-[400px]"
+            className="mx-auto aspect-square max-h-[500px]"
           >
-            <RadarChart data={normalizedData}>
+            <RadarChart
+              data={normalizedData}
+              outerRadius="80%"
+              margin={{ top: 32, right: 48, bottom: 32, left: 48 }}
+            >
               <ChartTooltip
                 cursor={false}
                 content={
