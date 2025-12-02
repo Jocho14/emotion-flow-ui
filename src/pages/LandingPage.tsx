@@ -1,7 +1,8 @@
 import FloatingLines from "@/components/FloatingLines";
 import { Button } from "@/components/ui/button";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import { ArrowRight } from "iconoir-react";
+import { ArrowRight, Upload } from "iconoir-react";
+import { Link } from "react-router";
 
 const LandingPage: React.FC = () => {
   return (
@@ -51,10 +52,10 @@ const LandingPage: React.FC = () => {
             <div className="pt-4">
               <Button
                 size="lg"
-                className="cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 text-lg font-semibold group w-42 h-15"
+                className="cursor-pointer bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 text-lg font-semibold group w-50 h-15"
               >
-                Get Started
-                <ArrowRight className="ml-3 w-10 h-10 group-hover:translate-x-1 transition-transform" />
+                <Link to="/analyze">Upload video</Link>
+                <Upload className="size-6" />
               </Button>
             </div>
           </div>
